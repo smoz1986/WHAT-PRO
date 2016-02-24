@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+[Desktop Entry]
+Version=1.0
+Name=WHAT-PRO
+Comment=WiFi Hacking Attack Tool
+Exec=python /root/WHAT-PRO/WHAT-PRO.py
+Icon=/root/WHAT-PRO/Wifi.gif
+Terminal=true
+Type=Application
+TargetEnvironment=Unity
+Categories=Utility;Application;
