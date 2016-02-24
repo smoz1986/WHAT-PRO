@@ -1,4 +1,3 @@
-Lighter version of WHAT-PRO
 Release notes for WiFi Hacking Attack Tool (WHAT) v1.0
 
 This is only to be used for educational purposes only. It is illegal to use this program against wireless devices that you do not own.
@@ -10,9 +9,11 @@ a. Kali Linux 2 (32 or 64 bit iso or RPi ARM)
 b. If using the WHAT-RPi version, please ensure the following repos are in the /etc/apt/sources.list file before installing:
 
 deb http://http.kali.org/kali sana main non-free contrib
+
 deb-src http://http.kali.org/kali sana main non-free contrib
 
 deb http://security.kali.org/kali-security/ sana/updates main contrib non-free
+
 deb-src http://security.kali.org/kali-security/ sana/updates main contrib non-free
 
 This tool has only been run with Kali Linux 2. It is unknown what success you will have running on Ubuntu.
@@ -29,7 +30,7 @@ To start up:
 
 cd root
 
-git clone https://github.com/smoz1986/WHAT.git
+git clone https://github.com/smoz1986/WHAT-PRO.git
 
 cd WHAT-PRO
 
