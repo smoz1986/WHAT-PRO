@@ -1,7 +1,7 @@
 #! /bin/bash
 # Script to install WiFi geo-tools
 
-echo installing geo-tools
+echo installing WHAT-PRO & geo-tools
 echo installing iSniff-GPS
 apt-get update && apt-get upgrade -y
 apt-get install python-pip python-setuptools git git-core gpsd gpsd-clients python-m2crypto libgcrypt11-dev libnl-3-dev libnl-genl-3-dev libxml-libxml-perl libdbi-perl libdbd-sqlite3-perl -y
