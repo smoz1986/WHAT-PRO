@@ -13,10 +13,10 @@ then
 	read -p 'Interface: ' intervar
 	echo Enter filename
 	read -p 'Filename: ' filevar
-	echo Enter Router IP
-	read -p 'Router IP: ' routervar
-	echo Enter Target IP - if required
-	read -p 'Target IP: ' targetvar
+	echo Enter Target 1 IP
+	read -p 'Target 1 IP: ' routervar
+	echo Enter Target 2 IP - if required
+	read -p 'Target 2 IP: ' targetvar
 	ettercap -T -i $intervar -M ARP -d -w /root/etterlog/$filevar.pcap /$routervar//$targetvar/
 else
     echo ettercap cancelled
