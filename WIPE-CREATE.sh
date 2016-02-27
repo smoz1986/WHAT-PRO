@@ -6,7 +6,7 @@ then
 	echo Removing files and creating new folders
 	cd /root
 	rm -r airodumplog dropbox nmaplog wpslog etterlog giskismet
-	mkdir airodumplog && mkdir dropbox && mkdir nmaplog && mkdir etterlog && mkdir giskismet && mkdir wpslog
+	mkdir airodumplog && mkdir dropbox && mkdir nmaplog && mkdir etterlog && mkdir giskismet && mkdir wpslog && mkdir sslstriplog
 	cd airodumplog && mkdir pcap 
 	cd ..
 	cd wpslog && mkdir wpscrack
