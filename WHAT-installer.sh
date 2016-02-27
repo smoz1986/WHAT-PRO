@@ -22,7 +22,7 @@ svn checkout http://pygmaps.googlecode.com/svn/trunk pygmaps-read-only
 cd pygmaps-read-only
 python setup.py build
 python setup.py install
-cd .. && rm -r samples_files && cd ..
+cd .. && rm -r sample_files && cd ..
 echo finished installing loc-nogps
 echo All finished
 
