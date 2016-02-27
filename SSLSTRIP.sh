@@ -6,7 +6,7 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
 then
 	echo starting sslstrip…
 	echo Enter filename
-	read -p ‘Filename: ‘ filevar
+	read -p 'Filename: ' filevar
 	sslstrip -a -f -l 8080 -w /root/sslstriplog/$filevar
 else
     echo sslstrip cancelled
