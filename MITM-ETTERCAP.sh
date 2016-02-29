@@ -19,9 +19,7 @@ else
  	read -p 'Filename: ' filevar
 	echo Enter Target 1 IP
 	read -p 'Target 1 IP: ' routervar
-	echo Enter Target 2 IP - if required
-	read -p 'Target 2 IP: ' targetvar
-	ettercap -T -i $intervar -M arp -w /root/etterlog/$filevar.pcap /$routervar//$targetvar/
+	ettercap -T -i $intervar -M ARP -w /root/etterlog/$filevar.pcap /$routervar///
 echo finished
 fi
 $SHELL
