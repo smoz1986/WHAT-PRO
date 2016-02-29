@@ -6,6 +6,7 @@ echo installing iSniff-GPS
 apt-get update && apt-get upgrade -y
 apt-get install python-pip python-setuptools git git-core gpsd gpsd-clients python-m2crypto libgcrypt11-dev libnl-3-dev libnl-genl-3-dev libxml-libxml-perl libdbi-perl libdbd-sqlite3-perl -y
 rm -r /etc/ettercap/etter.conf
+cp /root/WHAT-PRO/dns2proxy.sh /root/dns2proxy.sh 
 git clone https://github.com/byt3bl33d3r/sslstrip2.git
 cd /root/
 git clone https://github.com/LeonardoNve/dns2proxy.git
