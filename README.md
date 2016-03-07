@@ -34,7 +34,7 @@ git clone https://github.com/smoz1986/WHAT-PRO.git
 
 cd WHAT-PRO
 
-chmod +x *.sh
+chmod +x *.*
 
 ./WHAT-installer.sh
 
