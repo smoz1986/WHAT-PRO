@@ -82,14 +82,14 @@ btn_pcp.grid(row=1,column=0)
 
 def runShellScript9():
 	import subprocess
-	subprocess.call(['/root/WHAT/./ISNIFF-LAUNCH.sh'])
+	subprocess.call(['/root/WHAT-PRO/./ISNIFF-LAUNCH.sh'])
 
 btn_isn = Button( window , text = 'Start iSniff' , command=runShellScript9 , width = 15 )
 btn_isn.grid(row=3,column=0)
 
 def runShellScript10():
 	import subprocess
-	subprocess.call(['/root/WHAT/./LOCNOGPS-LAUNCH.sh'])
+	subprocess.call(['/root/WHAT-PRO/./LOCNOGPS-LAUNCH.sh'])
 
 btn_loc = Button( window , text = 'Start loc-nogps' , command=runShellScript10 , width = 15 )
 btn_loc.grid(row=4,column=0)
