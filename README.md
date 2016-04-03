@@ -89,11 +89,17 @@ ettercap -T -i $intervar -M arp:remote -w /root/etterlog/$filevar.pcap /$routerv
 
 ettercap -T -i $intervar -M ARP -w /root/etterlog/$filevar.pcap /$routervar//$targetvar/
 
-5. 'AIRCRACK' will brute force the WPA key captured in any PCAPs acquired from a target AP. All four EAPOLs from an AP and client from a single authentication and a very good wordlist will be required for this to work. Command line is as follows:
+5. 'Wifiphisher' will start the WiFiPhisher module. The command line used is as follows:
+
+python wifiphisher.py -jI $invar -aI $rapvar
+
+6. 'Mana' will start a full nat interface of the Mana Toolkit. You will need to configure the 'hostapd.conf' file to ensure that it fits the profile of the AP you are trying to clone. However, this will be brought up as part of the initiation of the file
+
+7. 'AIRCRACK' will brute force the WPA key captured in any PCAPs acquired from a target AP. All four EAPOLs from an AP and client from a single authentication and a very good wordlist will be required for this to work. Command line is as follows:
 
 aircrack-ng -b $bssidvar /root/airodumplog/pcap/$filevar.cap
 
-6. 'Metasploit' will fire up good old msfconsole for you to employ further at your hearts' content
+8. 'Metasploit' will fire up good old msfconsole for you to employ further at your hearts' content
 
 GEOLOCATION
 
